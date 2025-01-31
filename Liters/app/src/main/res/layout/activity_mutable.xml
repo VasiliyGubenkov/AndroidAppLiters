@@ -1,0 +1,359 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_mutable"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginBottom="0dp"
+    android:background="@color/base_them_for_liters"
+    tools:context=".Mutable">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout_mutable"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:background="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0">
+
+        <ImageButton
+            android:id="@+id/imageButton_Refulling_mutable"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginEnd="70dp"
+            android:background="@color/white"
+            android:onClick="goToMain"
+            app:layout_constraintBottom_toBottomOf="@+id/imageButton_Money_mutable"
+            app:layout_constraintEnd_toStartOf="@+id/imageButton_Money_mutable"
+            app:layout_constraintTop_toTopOf="@+id/imageButton_Money_mutable"
+            app:layout_constraintVertical_bias="0.0"
+            app:srcCompat="@drawable/my_gas_station_olive" />
+
+        <ImageButton
+            android:id="@+id/imageButton_Money_mutable"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginBottom="16dp"
+            android:background="@color/white"
+            android:onClick="goToStatistic"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0"
+            app:srcCompat="@drawable/my_money" />
+
+        <ImageButton
+            android:id="@+id/imageButton_Settings_mutable"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginStart="70dp"
+            android:background="@color/white"
+            android:onClick="goToSettings"
+            app:layout_constraintBottom_toBottomOf="@+id/imageButton_Money_mutable"
+            app:layout_constraintStart_toEndOf="@+id/imageButton_Money_mutable"
+            app:layout_constraintTop_toTopOf="@+id/imageButton_Money_mutable"
+            app:layout_constraintVertical_bias="0.0"
+            app:srcCompat="@drawable/my_settings" />
+
+        <TextView
+            android:id="@+id/textView_Refulling_mutable"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:ellipsize="none"
+            android:fontFamily="sans-serif"
+            android:gravity="center"
+            android:maxLines="2"
+            android:onClick="goToMain"
+            android:singleLine="false"
+            android:text="@string/refuelings"
+            android:textColor="@color/olive_for_liters"
+            android:textStyle="bold|italic"
+            app:layout_constraintBottom_toBottomOf="@+id/imageButton_Refulling_mutable"
+            app:layout_constraintEnd_toEndOf="@+id/imageButton_Refulling_mutable"
+            app:layout_constraintStart_toStartOf="@+id/imageButton_Refulling_mutable"
+            app:layout_constraintTop_toBottomOf="@+id/imageButton_Refulling_mutable"
+            app:layout_constraintWidth_percent="0.33" />
+
+        <TextView
+            android:id="@+id/textView_Money_mutable"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:ellipsize="none"
+            android:gravity="center"
+            android:maxLines="2"
+            android:onClick="goToStatistic"
+            android:singleLine="false"
+            android:text="@string/generateStatistic"
+            android:textColor="@color/black"
+            android:textStyle="bold|italic"
+            app:layout_constraintBottom_toBottomOf="@+id/imageButton_Money_mutable"
+            app:layout_constraintEnd_toEndOf="@+id/imageButton_Money_mutable"
+            app:layout_constraintStart_toStartOf="@+id/imageButton_Money_mutable"
+            app:layout_constraintTop_toBottomOf="@+id/imageButton_Money_mutable"
+            app:layout_constraintWidth_percent="0.33" />
+
+        <TextView
+            android:id="@+id/textView_Settings_mutable"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:ellipsize="none"
+            android:gravity="center"
+            android:maxLines="2"
+            android:onClick="goToSettings"
+            android:singleLine="false"
+            android:text="@string/settings"
+            android:textColor="@color/black"
+            android:textStyle="bold|italic"
+            app:layout_constraintBottom_toBottomOf="@+id/imageButton_Settings_mutable"
+            app:layout_constraintEnd_toEndOf="@+id/imageButton_Settings_mutable"
+            app:layout_constraintStart_toStartOf="@+id/imageButton_Settings_mutable"
+            app:layout_constraintTop_toBottomOf="@+id/imageButton_Settings_mutable"
+            app:layout_constraintWidth_percent="0.33" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout4_mutable"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="602dp"
+        android:background="@drawable/rounded_white_background"
+        android:onClick="goToMain"
+        app:layout_constraintBottom_toTopOf="@+id/constraintLayout_mutable"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+        <ImageView
+            android:id="@+id/imageView2_mutable"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="24dp"
+            android:onClick="goToMain"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0"
+            app:srcCompat="@drawable/my_back" />
+
+        <TextView
+            android:id="@+id/textView2_mutable"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="24dp"
+            android:onClick="goToMain"
+            android:text="@string/back"
+            android:textColor="@color/black"
+            android:textSize="25sp"
+            android:textStyle="bold|italic"
+            app:layout_constraintBottom_toBottomOf="@+id/imageView2_mutable"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/imageView2_mutable"
+            app:layout_constraintTop_toTopOf="@+id/imageView2_mutable" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout5_mutable"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/rounded_white_background"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout4_mutable"
+        app:layout_constraintVertical_bias="0.0">
+
+        <TextView
+            android:id="@+id/textView7_mutable"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="8dp"
+            android:ellipsize="none"
+            android:scrollHorizontally="false"
+            android:singleLine="false"
+            android:text="@string/howManyLiters"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:textStyle="bold|italic"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textView8_mutable"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="8dp"
+            android:ellipsize="none"
+            android:scrollHorizontally="false"
+            android:singleLine="false"
+            android:text="@string/howMuchMoney"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:textStyle="bold|italic"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editTextText5_mutable" />
+
+        <TextView
+            android:id="@+id/textView9_mutable"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="8dp"
+            android:ellipsize="none"
+            android:scrollHorizontally="false"
+            android:singleLine="false"
+            android:text="@string/wichMileage"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:textStyle="bold|italic"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editTextText2_mutable" />
+
+        <EditText
+            android:id="@+id/editTextText2_mutable"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:ems="10"
+            android:hint="@string/hintDollars"
+            android:inputType="numberDecimal"
+            android:textColor="@color/olive_for_liters"
+            android:textStyle="bold|italic"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView8_mutable" />
+
+        <EditText
+            android:id="@+id/editTextText3_mutable"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:ems="10"
+            android:hint="@string/hintMileage"
+            android:inputType="number"
+            android:textColor="@color/olive_for_liters"
+            android:textStyle="bold|italic"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView9_mutable" />
+
+        <TextView
+            android:id="@+id/textView12_mutable"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="8dp"
+            android:ellipsize="none"
+            android:scrollHorizontally="false"
+            android:singleLine="false"
+            android:text="@string/dateToday"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:textStyle="bold|italic"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editTextText3_mutable" />
+
+        <EditText
+            android:id="@+id/editTextText4_mutable"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:ems="10"
+            android:inputType="text"
+            android:textColor="@color/olive_for_liters"
+            android:textStyle="bold|italic"
+            app:layout_constraintEnd_toStartOf="@+id/textView13_mutable"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView12_mutable" />
+
+        <EditText
+            android:id="@+id/editTextText5_mutable"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:ems="10"
+            android:hint="@string/hintLiters"
+            android:inputType="numberDecimal"
+            android:textColor="@color/olive_for_liters"
+            android:textStyle="bold|italic"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView7_mutable" />
+
+        <TextView
+            android:id="@+id/textView13_mutable"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:text="@string/clickTwo"
+            android:textColor="@color/black"
+            android:textSize="10sp"
+            android:textStyle="italic"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/editTextText4_mutable"
+            app:layout_constraintTop_toTopOf="@+id/editTextText4_mutable" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <Button
+        android:id="@+id/button2_mutable"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="@color/olive_for_liters"
+        android:onClick="onClickUpdate"
+        android:text="@string/saveEdit"
+        android:textColor="@color/white"
+        android:textSize="25sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout5_mutable"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="@color/olive_for_liters"
+        android:onClick="onClickDelete"
+        android:text="@string/delete"
+        android:textSize="25sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintEnd_toEndOf="@+id/button2_mutable"
+        app:layout_constraintStart_toStartOf="@+id/button2_mutable"
+        app:layout_constraintTop_toBottomOf="@+id/button2_mutable" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

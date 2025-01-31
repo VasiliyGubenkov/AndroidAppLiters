@@ -1,0 +1,43 @@
+<resources>
+
+    <string name="app_name">Liters</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+    <string name="addNewValues">Add new data about refueling</string>
+    <string name="generateStatistic">Statistics</string>
+    <string name="refuelings">Data</string>
+    <string name="settings">Settings</string>
+    <string name="caution">Please note that if you delete the application from your phone, all the data you previously entered will be irretrievably lost!</string>
+    <string name="author">Author: <b>Vasiliy Gubenkov</b>\nFor contacts: <b>v.gubenkov@gmail.com</b> \nApp version: <b>1.2</b></string>
+    <string name="clickToEdit">Click to edit or delete:</string>
+    <string name="back">Back</string>
+    <string name="dataAboutRefueling">Enter fuel refueling information:</string>
+    <string name="howManyLiters">How many liters of gasoline did you fill:</string>
+    <string name="howMuchMoney">For what amount:</string>
+    <string name="wichMileage">What is the mileage of your car at the time of refueling:</string>
+    <string name="previousMileage">Previous mileage readings:</string>
+    <string name="dateToday">Refueling date:</string>
+    <string name="hintLiters">0.00 (liters)</string>
+    <string name="hintDollars">0.00 (dollars)</string>
+    <string name="hintMileage">0 (miles)</string>
+    <string name="clickTwo">Double click\nto open calendar</string>
+    <string name="saveEdit">Save changes</string>
+    <string name="save">Save</string>
+    <string name="dollars">dollars</string>
+    <string name="liters">liters</string>
+    <string name="miles">miles</string>
+    <string name="instruction">Add data about each new gas station, and then you can generate statistics. New data will appear on this screen.</string>
+    <string name="delete">Delete the entry completely</string>
+    <string name="period">Select the period for which you want to generate statistics:</string>
+    <string name="startPeriod">Period start date:</string>
+    <string name="endPeriod">Period end date:</string>
+    <string name="LitersEndPeriod">Approximately how many liters of fuel remained in the tank at the end of the period:</string>
+    <string name="CalculateStatistics">Calculate statistics</string>
+    <string name="yoursRange">You drove:</string>
+    <string name="yoursAmount">You spent money:</string>
+    <string name="yoursLiters">You spent liters:</string>
+    <string name="yoursAverageExpense">Average consumption, liters per 100 miles.:</string>
+    <string name="yoursAverageMoneyExpense">Average consumption, dollars per 100 miles.:</string>
+    <string name="litMiles">.liters/100miles</string>
+    <string name="dollMiles">dollars/100miles</string>
+ </resources>
